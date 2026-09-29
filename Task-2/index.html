@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body> 
+    <main class="app">
+    <h1>My To-Do List</h1>
+    <p>Keep track of your daily tasks.</p>
+
+    <form id="task-form">
+      <label for="task-input">New task</label>
+      <input 
+        type="text"
+        id="task-input"
+        placeholder="What do you need to do?" required>
+      <button type="submit">Add Task</button>
+    </form>
+
+    <div class="task-controls">
+      <input type="search" id="search-input" placeholder="Search tasks" aria-label="Search tasks">
+
+      <label for="filter-select">Show:</label>
+      <select id="filter-select">
+        <option value="all">All</option>
+        <option value="pending">Pending</option>
+        <option value="completed">Completed</option>
+      </select>
+    </div>
+
+    <p id="task-counts">Completed: 0 | Pending: 0</p>
+    <ul id="task-list"></ul>
+  </main>
+</body>
+</html>
