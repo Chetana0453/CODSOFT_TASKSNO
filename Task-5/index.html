@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Curious Corner | Blog</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html" class="logo">The Curious Corner</a>
+
+      <button
+        type="button"
+        id="menu-toggle"
+        aria-controls="nav-links"
+        aria-expanded="false"
+        hidden
+      >
+        Menu
+      </button>
+
+      <div id="nav-links" class="nav-links">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="#articles">Articles</a>
+        <a href="#about">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">IDEAS • STORIES • INSPIRATION</p>
+      <h1>A little curiosity goes a long way.</h1>
+      <p>
+        Explore stories about technology, travel, and everyday living.
+      </p>
+      <a href="#articles" class="button">Explore Articles</a>
+    </section>
+
+    <section class="featured-section" aria-labelledby="featured-heading">
+      <h2 id="featured-heading">Featured Story</h2>
+
+      <article class="featured-card">
+        <div class="featured-content">
+          <span class="category">Technology</span>
+          <h3>Starting Your Web Development Journey</h3>
+          <p>
+            Discover how HTML, CSS, and JavaScript work together
+            to bring your ideas to life.
+          </p>
+          <p>
+            <time datetime="2026-10-15">15 October 2026</time>
+          </p>
+          <a href="post.html?id=1">Read the story →</a>
+        </div>
+      </article>
+    </section>
+
+    <section id="articles" class="articles-section">
+      <h2>Latest Articles</h2>
+
+      <div class="filters">
+        <div class="filter-group">
+          <label for="search-input">Search articles</label>
+          <input
+            type="search"
+            id="search-input"
+            placeholder="Search by title or topic"
+          >
+        </div>
+
+        <div class="filter-group">
+          <label for="category-filter">Category</label>
+          <select id="category-filter">
+            <option value="all">All Categories</option>
+            <option value="Technology">Technology</option>
+            <option value="Travel">Travel</option>
+            <option value="Lifestyle">Lifestyle</option>
+          </select>
+        </div>
+      </div>
+
+      <p id="results-message" role="status"></p>
+
+      <div id="blog-grid" class="blog-grid"></div>
+
+      <button type="button" id="load-more" hidden>
+        Load More
+      </button>
+
+      <noscript>
+        Please enable JavaScript to browse and search the articles.
+      </noscript>
+    </section>
+
+    <section id="about" class="about-section">
+      <h2>About This Blog</h2>
+      <p>
+        The Curious Corner is a place to explore new ideas,
+        learn something useful, and find inspiration in everyday life.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 The Curious Corner. Created by Chetana.</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+</body>
+</html>
